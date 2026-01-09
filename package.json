@@ -1,0 +1,36 @@
+
+{
+  "name": "focusmate",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": {
+  "name": "Tony Prajapati",
+  "email": "vqvtony@gmail.com"
+},
+  "license": "ISC",
+  "description": "test",
+  "devDependencies": {
+    "electron": "^39.2.7"
+  },
+  "homepage": "https://github.com/yourusername/focusmate",
+  "dependencies": {
+    "electron-store": "^6.0.1"
+  },
+  "build": {
+    "appId": "com.devtony.breathapp_focusmate",
+    "linux": {
+      "target": ["deb"],
+      "category": "Utility",
+      "icon": "/assets/icon.png"
+    },
+    "deb": {
+      "depends": ["xdotool"]
+    }
+  }
+}

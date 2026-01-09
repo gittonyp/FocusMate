@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FocusMate</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <section id="home-view" class="view active">
+      <button id="settings-btn" class="icon-btn"><i class="fa-solid fa-gear"></i></button>
+
+      <div class="stack-container">
+        <div id="circle" class="breathing-orb"></div>
+        <div class="content-layer">
+          <h2 id="timeremain" class="small-header">FocusMate</h2>
+          <div class="center-text">
+            <h3 id="fqoute"></h3>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <section id="settings-view" class="view modal hidden">
+    <div class="modal-content">
+        <h2><i class="fa-solid fa-shield-halved"></i> Focus Settings</h2>
+        
+        <div class="input-group">
+            <label for="blacklist-input">Distraction Keywords (one per line):</label>
+            <p class="subtext">If a window title contains these words, FocusMate will trigger.</p>
+            <textarea id="blacklist-input" rows="8" spellcheck="false"></textarea>
+        </div>
+
+        <div class="button-row">
+            <button id="cancel-settings" class="secondary-btn">Cancel</button>
+            <button id="save-settings" class="primary-btn">Save Changes</button>
+        </div>
+    </div>
+  </section>
+  <script src="../settings.js"></script>
+
+</body>
+
+</html>
